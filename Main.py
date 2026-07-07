@@ -114,7 +114,7 @@ def analisar_dados_invoice(arquivo_json):
         print("\n" + "="*40)
 
     except FileNotFoundError:
-        print(f"[Erro] O arquivo '{arquivo_json}' não foi encontrado. Execute a extração primeiro.")
+        print(f"[Erro] O arquivo '{arquivo_json}' não foi encontrado.")
     except Exception as e:
         print(f"[Erro] Ocorreu uma falha ao analisar os dados: {e}")
 
