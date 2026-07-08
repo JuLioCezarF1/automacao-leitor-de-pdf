@@ -91,7 +91,6 @@ def analisar_dados_invoice(arquivo_json):
             meta=["order_id", "order_date", "customer_id"]
         )
         
-        #Multiplicando a quantidade pelo preço do item
         df_itens["valor_total_item"] = df_itens["quantidade"] * df_itens["preco_unitario"].sum()
 
         total_invoice = df_itens.groupby("order_id")["valor_total_item"].sum()
